@@ -1,36 +1,41 @@
-export enum OrderStatus {
-  Received = 0,
-  InPreparation = 1,
-  Ready = 2,
-  Delivered = 3,
-  Cancelled = 4,
-}
+export const OrderStatus = {
+  Received: 0,
+  InPreparation: 1,
+  Ready: 2,
+  Delivered: 3,
+  Cancelled: 4,
+} as const;
+export type OrderStatus = (typeof OrderStatus)[keyof typeof OrderStatus];
 
-export enum PaymentMethod {
-  Cash = 0,
-  Pix = 1,
-  Card = 2,
-}
+export const PaymentMethod = {
+  Cash: 0,
+  Pix: 1,
+  Card: 2,
+} as const;
+export type PaymentMethod = (typeof PaymentMethod)[keyof typeof PaymentMethod];
 
-export enum PlanType {
-  Basic = 0,
-  Pro = 1,
-  Enterprise = 2,
-}
+export const PlanType = {
+  Basic: 0,
+  Pro: 1,
+  Enterprise: 2,
+} as const;
+export type PlanType = (typeof PlanType)[keyof typeof PlanType];
 
-export enum TableSessionStatus {
-  Open = 0,
-  Closed = 1,
-}
+export const TableSessionStatus = {
+  Open: 0,
+  Closed: 1,
+} as const;
+export type TableSessionStatus = (typeof TableSessionStatus)[keyof typeof TableSessionStatus];
 
-export enum UserRole {
-  SuperAdmin = 0,
-  Admin = 1,
-  Waiter = 2,
-  Cashier = 3,
-  Kitchen = 4,
-  Customer = 5,
-}
+export const UserRole = {
+  SuperAdmin: 0,
+  Admin: 1,
+  Waiter: 2,
+  Cashier: 3,
+  Kitchen: 4,
+  Customer: 5,
+} as const;
+export type UserRole = (typeof UserRole)[keyof typeof UserRole];
 
 export interface UserDto {
   id: string;

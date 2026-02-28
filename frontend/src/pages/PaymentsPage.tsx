@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { paymentsService } from '../services/paymentsService';
 import { ordersService } from '../services/ordersService';
 import { PaymentMethod, PaymentMethodLabels } from '../types';
@@ -14,7 +14,7 @@ export default function PaymentsPage() {
   const [form, setForm] = useState<CreatePaymentCommand>({ orderId: '', amount: 0, method: PaymentMethod.Pix });
   const [dateFilter, setDateFilter] = useState('');
 
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     try {
       setLoading(true);
       const [paymentsData, ordersData] = await Promise.all([
@@ -28,9 +28,9 @@ export default function PaymentsPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [dateFilter]);
 
-  useEffect(() => { loadData(); }, [dateFilter]);
+  useEffect(() => { loadData(); }, [loadData]);
 
   const handleOrderSelect = (orderId: string) => {
     const order = orders.find(o => o.id === orderId);
