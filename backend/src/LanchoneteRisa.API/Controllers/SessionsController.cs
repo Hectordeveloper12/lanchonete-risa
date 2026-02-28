@@ -33,7 +33,7 @@ public class SessionsController : ControllerBase
     public async Task<IActionResult> Open([FromBody] OpenTableSessionCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(GetActiveSessions), result);
+        return Ok(result);
     }
 
     [HttpPost("{id:guid}/close")]

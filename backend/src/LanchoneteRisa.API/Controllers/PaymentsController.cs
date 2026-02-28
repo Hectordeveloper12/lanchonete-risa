@@ -29,6 +29,6 @@ public class PaymentsController : ControllerBase
     public async Task<IActionResult> Create([FromBody] CreatePaymentCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(GetByDate), result);
+        return Ok(result);
     }
 }

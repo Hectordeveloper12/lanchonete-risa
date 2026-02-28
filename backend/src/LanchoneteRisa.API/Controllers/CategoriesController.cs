@@ -27,7 +27,7 @@ public class CategoriesController : ControllerBase
     public async Task<IActionResult> Create([FromBody] CreateCategoryCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(GetAll), result);
+        return Ok(result);
     }
 
     [HttpPut("{id:guid}")]

@@ -27,7 +27,7 @@ public class TablesController : ControllerBase
     public async Task<IActionResult> Create([FromBody] CreateTableCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(GetAll), result);
+        return Ok(result);
     }
 
     [HttpPost("batch")]
@@ -35,6 +35,6 @@ public class TablesController : ControllerBase
     public async Task<IActionResult> CreateBatch([FromBody] CreateBatchTablesCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(GetAll), result);
+        return Ok(result);
     }
 }

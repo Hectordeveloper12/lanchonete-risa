@@ -23,6 +23,6 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Register([FromBody] RegisterCommand command)
     {
         var result = await _mediator.Send(command);
-        return CreatedAtAction(nameof(Register), result);
+        return Ok(result);
     }
 }
