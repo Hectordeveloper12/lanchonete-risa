@@ -31,6 +31,7 @@ public class MappingProfile : Profile
 
         CreateMap<Payment, PaymentDto>();
 
-        CreateMap<Category, MenuCategoryDto>();
+        CreateMap<Category, MenuCategoryDto>()
+            .ForMember(dest => dest.Products, opt => opt.MapFrom(src => src.Products));
     }
 }
