@@ -95,7 +95,7 @@ public class PrintService : IPrintService
         sb.AppendLine("================================");
         // ESC/POS: Center align
         sb.Append("\x1B\x61\x01");
-        sb.AppendLine("Obrigado pela preferencia!");
+        sb.AppendLine("Obrigado pela preferência!");
 
         // ESC/POS: Feed and cut
         sb.Append("\x1D\x56\x00");
