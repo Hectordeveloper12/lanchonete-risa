@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "362YfduDV5U=",
+  "success": true,
+  "projectFilePath": "/home/runner/work/lanchonete-risa/lanchonete-risa/backend/src/LanchoneteRisa.Application/LanchoneteRisa.Application.csproj",
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/fluentvalidation.dependencyinjectionextensions/11.9.0/fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/microsoft.netcore.app.ref/8.0.23/microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
+    "/tmp/codeql-scratch-b1ced342fe8bbc00/dbs/csharp/working/packages/microsoft.aspnetcore.app.ref/8.0.23/microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512"
+  ],
+  "logs": []
+}
